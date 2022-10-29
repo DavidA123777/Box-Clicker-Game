@@ -1,0 +1,138 @@
+body{
+  background-color: var(--body-color);
+  color: var(--text-color);
+  text-align: center;
+  vertical-align: center;
+}
+
+#box1, #box2, #box3, #box4{
+  height: 6.25rem;
+  width: 6.25rem;
+  background-color: var(--box1color);
+  visibility: hidden;
+}
+
+#top-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rem;
+}
+
+#bottom-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#box2{
+  background-color: var(--box2color);
+}
+
+#box3{
+  background-color: var(--box3color);
+}
+
+#box4{
+  background-color: var(--box4color);
+}
+p{
+  font-size: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0px auto 0px auto;
+}
+Button{
+  margin: 0px auto 0px auto;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--third-color);
+  background-color: var(--primary-color);
+  border: 0.125rem solid var(--secondary-color);
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: background-color .15s, opacity .15s;
+
+}
+button:hover{
+  background-color: var(--hovercolor);
+}
+button:active{
+  opacity: 0.8;
+}
+input{
+  display: block;
+  margin: 20px auto 20px auto;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 4px;
+  border-style: solid;
+}
+#save-btn{
+
+  border: 0.125rem solid var(--secondary-color);
+
+}
+#save-btn:hover{
+
+}
+#delete-btn{
+
+  border: 0.125rem solid var(--secondary-color);
+}
+#delete-btn:hover{
+}
+#night-mode{
+  color: black;
+  background-color: white;
+  border: 0.125rem solid black;
+}
+#night-mode:hover{
+  background-color: rgb(232, 230, 229);
+}
+#night-mode:active{
+  opacity: 0.7;
+}
+.night-btn{
+  color: black;
+  background-color: orange;
+  border: 0.125rem solid black;
+}
+.night-btn:hover{
+  background-color: rgb(210, 132, 27);
+}
+.night-btn:active{
+  opacity: 0.8;
+}
+
+#night-mode{
+  cursor: pointer;
+}
+
+:root{
+  --primary-color: gold;
+  --secondary-color: green;
+  --third-color: green;
+  --body-color: white;
+  --text-color: black;
+  --box1color: lightblue;
+  --box2color: lightpink;
+  --box3color: lightgreen;
+  --box4color:  rgb(250, 230, 96);
+  --hovercolor: rgb(244, 237, 91)
+}
+.dark-theme{
+  --primary-color: rgb(252, 164, 13);
+  --secondary-color: white;
+  --third-color: black;
+  --body-color: black;
+  --text-color: white;
+  --hovercolor: rgb(255, 178, 88);
+  --box1color: rgb(231, 84, 255);
+  --box2color: white;
+  --box3color: rgb(46, 104, 255);
+  --box4color: rgb(181, 255, 24);
+}
